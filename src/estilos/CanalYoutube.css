@@ -1,0 +1,84 @@
+:root{
+    --main-haed:#104141;
+    --light-b-haed:#006d77;
+    --light-haed:#3ea175;
+    --gray-haed:#808080;
+    --non-white-haed:#f5f5f5;
+    --non-black-haed:#16161a;
+
+    
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.content h2{
+    font-size: 15pt;
+    color:black;
+    font-weight: 900;
+    margin-bottom: 5pt;
+    line-height: 25pt;
+}
+.content h3{
+    font-size: 12pt;
+    font-weight:lighter;
+    color:black;
+    
+}
+.content p{
+    color:black;
+    font-weight: 200;
+}
+
+.searchBox{
+    margin-bottom: 20pt;
+    border:solid 1pt;
+    padding:20pt;
+    border-radius: 5pt;
+}
+.searchBox #inputSearch{
+    border-radius: 5pt;
+    width: 100%;
+}
+.searchBox #search{
+    background-color: var(--main-haed);
+    width: 100%;
+    color:white;
+    border-radius: 5pt;
+    margin-top: 5pt;
+    
+}
+
+#anterior{
+    border-radius: 5pt;
+    background-color:var(--main-haed);
+    color:white;
+    margin:10pt;
+    width: 80pt;
+    height: 30pt;
+    border:none;
+    
+}
+
+#anterior:hover{
+    background-color: green;
+}
+
+#siguiente{
+    border-radius: 5pt;
+    background-color:var(--main-haed);
+    color:#ffffff;
+    margin:10pt;
+    width: 80pt;
+    height: 30pt;
+    border:none;
+    
+}
+
+#siguiente:hover{
+    background-color: green;
+}
