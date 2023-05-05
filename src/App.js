@@ -14,8 +14,9 @@ import {HashRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Header />
+      
       <Router>
+        <Header />
         <Nav/>
         <Routes>
           <Route path="/" Component={Index}/>

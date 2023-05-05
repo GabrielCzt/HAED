@@ -12,13 +12,12 @@ import { Link } from "react-router-dom";
 
 function Navv()
 {
-    const Tics = () =>(<img class="navbar-brand imagen" src={TICS} alt="TIC"/>)
-    const Quality = () =>(<img class="navbar-brand imagen" src={Calidad} alt="logo"/>)
+    
 return (
     <>
     <Navbar bg="light" expand="lg" className=" navbar-fixed-top">
       <div class="container">
-        <div class="col-sm-8 col-md-6">
+        <div class="col-sm-8 col-md-5">
         <img class="navbar-brand imagen" src={TICS} alt="TIC"/>
         <img class="navbar-brand imagen" src={Calidad} alt="logo"/>
         </div>
@@ -27,6 +26,7 @@ return (
                 <Nav className="me-auto" >
                     
                     <Link id="links" to="/">Iniciar</Link>
+                    <Link id="links" to="/Descubre">Descubre</Link>
                     <Link id="links" to="/Autoevaluacion">Autoevaluación</Link>
                     <Link id="links" to="/CanalYoutube">Canal Youtube</Link>                    
                     <Link id="links" to="/Contacto">Contacto</Link>

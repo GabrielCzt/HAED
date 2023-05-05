@@ -1,6 +1,17 @@
 @import url(./Constantes.css);
 
-
+#links{
+  color: black;
+}
+ul{
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+li{
+  padding-left: 0px;
+  margin: 0px;
+}
 
 header{
     padding-top: 10pt;

@@ -5,6 +5,7 @@ import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import "../estilos/Header.css"
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Link } from "react-router-dom";
 
 function Year(){
   let year
@@ -37,8 +38,11 @@ function Header() {
                 <FontAwesomeIcon icon={faCircleUser} />
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Iniciar Sesión</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Registrarse</Dropdown.Item>
+                <ul>
+                  <li><Link id="links" to="/Iniciar-sesion">Iniciar Sesión</Link></li>
+                  <li><Link id="links" to="/Registrarse">Registrarse</Link></li>
+                </ul>                                
+                
               </Dropdown.Menu>
             </Dropdown>
           </div>
