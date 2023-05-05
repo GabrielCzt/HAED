@@ -37,12 +37,11 @@ function Header() {
               <Dropdown.Toggle id="dropdown-basic" >
                 <FontAwesomeIcon icon={faCircleUser} />
               </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <ul>
-                  <li><Link id="links" to="/Iniciar-sesion">Iniciar Sesión</Link></li>
-                  <li><Link id="links" to="/Registrarse">Registrarse</Link></li>
-                </ul>                                
+              <Dropdown.Menu>                
+                <Dropdown.ItemText><Link id="links-header" to="/Iniciar-sesion">Iniciar Sesión</Link></Dropdown.ItemText>
+                <Dropdown.ItemText><Link id="links-header" to="/Registrarse">Registrarse</Link>    </Dropdown.ItemText>
                 
+                                                                           
               </Dropdown.Menu>
             </Dropdown>
           </div>

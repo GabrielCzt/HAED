@@ -1,17 +1,11 @@
 @import url(./Constantes.css);
 
-#links{
+#links-header{
   color: black;
-}
-ul{
-  list-style: none;
   padding-left: 0px;
   margin: 0px;
 }
-li{
-  padding-left: 0px;
-  margin: 0px;
-}
+
 
 header{
     padding-top: 10pt;
@@ -34,6 +28,7 @@ header{
     margin: var(--haed);  
     border-color: white;
     margin-bottom: 10pt;
+    color: white;
   }
   #Title{
     padding-top: 5pt;
