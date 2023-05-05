@@ -1,6 +1,7 @@
 import React from "react";
 import  "bootstrap/dist/css/bootstrap.min.css";
 import "../estilos/Footer.css"
+import { Link } from "react-router-dom";
 
 function Year(){
     let year = new Date().getFullYear();
@@ -23,11 +24,11 @@ function Footer(){
                             <div class="footer-tittle">
                                <h4>Páginas</h4>
                                 <ul>
-                                    <li><a href="">Inicio</a></li>
-                                    <li><a href="">Descubre</a></li>
-                                    <li><a href="">Autoevaluación</a></li>
-                                    <li><a href="">Canal YouTube</a></li>
-                                    <li><a href="">Contacto</a></li>
+                                    <li><Link to="/">Inicio</Link></li>
+                                    <li><Link to="/Descubre">Descubre</Link></li>
+                                    <li><Link to="/Autoevaluacion">Autoevaluación</Link></li>
+                                    <li><Link to="/CanalYoutube">Canal de Youtube</Link></li>
+                                    <li><Link to="Contacto">Contacto</Link></li>
                                 </ul>
                             </div>
                         </div>

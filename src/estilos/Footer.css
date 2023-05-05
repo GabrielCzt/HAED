@@ -9,7 +9,7 @@ div.container-fluid{
 }
 
 footer{
-    background-color: var(--main-haed);
+    background-color: var(--haed);
     padding: 10pt;
 }
 

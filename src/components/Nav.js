@@ -7,6 +7,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
+
 
 function Navv()
 {
@@ -23,10 +25,12 @@ return (
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>  
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto" >
-                    <Nav.Link href="#home" id="links">Inicio</Nav.Link>
-                    <Nav.Link href="#link" id="links">Autoevaluacion</Nav.Link>
-                    <Nav.Link href="#link" id="links">Canal Youtube</Nav.Link>
-                    <Nav.Link href="#link" id="links">Contacto</Nav.Link>
+                    
+                    <Link id="links" to="/">Iniciar</Link>
+                    <Link id="links" to="/Autoevaluacion">Autoevaluación</Link>
+                    <Link id="links" to="/CanalYoutube">Canal Youtube</Link>                    
+                    <Link id="links" to="/Contacto">Contacto</Link>
+
                 </Nav>
             </Navbar.Collapse>  
       </div>

@@ -60,9 +60,9 @@
 }
 
 .btn-main {
-    background: var(--main-haed);
+    background: var(--haed);
     color: white;
-    border-color: var(--main-haed);
+    border-color: var(--haed);
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -81,7 +81,7 @@
 
 .btn-main:hover {
     background: var(--gray-haed);
-    border-color: var(--main-haed);
+    border-color: var(--haed);
     color: white;
 }
 

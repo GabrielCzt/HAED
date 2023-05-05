@@ -4,7 +4,7 @@
 
 header{
     padding-top: 10pt;
-    background-color: #104141;  
+    background-color: var(--haed);  
 }
   #reloj{
     color:yellow;
@@ -19,8 +19,8 @@ header{
     padding-top: 5pt;
   }
   #dropdown-basic{
-    background-color: var(--main-haed);
-    margin: var(--main-haed);  
+    background-color: var(--haed);
+    margin: var(--haed);  
     border-color: white;
     margin-bottom: 10pt;
   }

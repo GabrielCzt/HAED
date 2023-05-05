@@ -6,7 +6,7 @@
 }
 /* Estilos de imagen Herramienta de autoevaluacion */
 .slider-area2 {
-    background-color: #039eac;
+    background-color: var(--cabecera);
     background-repeat: no-repeat;
     background-size: cover;
 }

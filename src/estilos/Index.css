@@ -17,7 +17,7 @@ div.container-fluid{
 }
 h1{
     font-family: 'Montserrat';
-    color:var(--main-haed);
+    color:var(--titulos);
     font-weight:600;
     font-size: 30pt;
     
@@ -36,7 +36,7 @@ h1{
 
 }
 #contestar:hover{
-    background-color:var(--main-haed);
+    background-color:var(--titulos);
     color:white;
 }
 
@@ -79,7 +79,7 @@ li{
     font-family: 'Montserrat';
 }
 .cuerpos h2{
-    color:var(--main-haed);
+    color:var(--titulos);
     font-size:x-large;
    font-weight: 600;   
    font-family: "Montserrat", sans-serif;
