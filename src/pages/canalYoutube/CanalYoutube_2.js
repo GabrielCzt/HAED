@@ -1,10 +1,16 @@
 import React from "react";
 import "../../estilos/Pages.css"
 import "../../estilos/CanalYoutube.css";
+import { Link } from "react-router-dom";
 
 function CanalYT2(){
     return(
         <>
+            <div class="bar">
+                <div class="container">
+                    <h1>Canal de YouTube</h1>
+                </div>
+            </div>
             <div className="container content" id="content1">
                 <div className="row">
                     <div className="col-sm-12 col-md-4 order-2 order-sm-2 order-md-1">
@@ -108,17 +114,25 @@ function CanalYT2(){
                 </div>
                             
                 <div>
-                    <button id="anterior">Anterior</button>
-                    <button id="siguiente">Siguiente</button>
+                <Link id="anterior" to="/CanalYoutube">Anterior</Link>
+                <Link id="siguiente" to="/CanalYoutube/3">Siguiente</Link><br/><br/>
                 </div>
             
                 
             </div>
-
             
-
-
         </>
     );
 }
 export default CanalYT2
+
+
+
+
+
+
+
+
+
+
+
