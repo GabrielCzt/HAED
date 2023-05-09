@@ -23,8 +23,7 @@ return (
         </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>  
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto" >
-                    
+                <Nav className="me-auto" >                    
                     <Link id="links" to="/">Inicio</Link>
                     <Link id="links" to="/Descubre">Descubre</Link>
                     <Link id="links" to="/Autoevaluacion">Autoevaluación</Link>
