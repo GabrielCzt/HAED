@@ -5,7 +5,7 @@ import "../estilos/Pages.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 function Login(){

@@ -15,7 +15,7 @@ function Navv()
     
 return (
     <>
-    <Navbar bg="light" expand="lg" className=" navbar-fixed-top">
+    <Navbar expand="lg" className=" navbar-fixed-to nav">
       <div class="container">
         <div class="col-sm-8 col-md-5">
         <img class="navbar-brand imagen" src={TICS} alt="TIC"/>
@@ -25,7 +25,7 @@ return (
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto" >
                     
-                    <Link id="links" to="/">Iniciar</Link>
+                    <Link id="links" to="/">Inicio</Link>
                     <Link id="links" to="/Descubre">Descubre</Link>
                     <Link id="links" to="/Autoevaluacion">Autoevaluación</Link>
                     <Link id="links" to="/CanalYoutube">Canal Youtube</Link>                    

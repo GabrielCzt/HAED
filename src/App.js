@@ -12,13 +12,23 @@ import CanalYT_Start from './pages/canalYoutube/CanalYoutube';
 import CanalYT2 from './pages/canalYoutube/CanalYoutube_2';
 import CanalYT3 from './pages/canalYoutube/CanalYoutube_3';
 import {HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
+const ScrollToTop=()=>{
+  const{pathname} = useLocation();
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[pathname]);
+  return null;
+}
 
 function App() {
   return (
     <>
       
       <Router>
+        <ScrollToTop/>
         <Header />
         <Nav/>
         <Routes>

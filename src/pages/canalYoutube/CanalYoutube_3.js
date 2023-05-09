@@ -2,6 +2,7 @@ import React from "react";
 import "../../estilos/Pages.css"
 import "../../estilos/CanalYoutube.css";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function CanalYT3(){
     return(

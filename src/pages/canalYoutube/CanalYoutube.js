@@ -4,6 +4,7 @@ import "../../estilos/CanalYoutube.css";
 import CanalYT2 from "./CanalYoutube_2";
 import CanalYT3 from "./CanalYoutube_3";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function CanalYT_Start(){
     return(

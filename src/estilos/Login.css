@@ -24,23 +24,23 @@ div.container-fluid{
     text-align: center;
 }
 .sign h2{
-    color:white;
+    color:var(--white);
     font-family: sans-serif;
     font-weight: bolder;
     margin-bottom: 20pt;
 }
 .sign button{
     background-color:transparent;
-    border-color: white;
+    border-color: var(--white);
     padding: 10pt;
     padding-left: 20pt;
     padding-right: 20pt;
     margin:30pt;
-    color:white;
+    color:var(--white);
     border-radius: 5pt;
 }
 .sign button:hover{
-    background-color: white;
+    background-color: var(white);
     color:var(--light-b-haed);
 
 }
@@ -94,7 +94,7 @@ div.container-fluid{
 }
 .login #ingresar:hover{
     background-color: var(--light-b-haed);
-    color:white;
+    color:var(--white);
 
 }
 .login button{
@@ -105,7 +105,7 @@ div.container-fluid{
     
 }
 .login button:hover{
-    color:black;
+    color:var(--black);
     background-color: transparent;
     border: none;
     outline: none;

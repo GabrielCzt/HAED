@@ -17,7 +17,7 @@
 }
 
 .slider-area2 .hero-cap h2 {
-    color: #fff;
+    color: var(--white);
     font-size: 60px;
     font-weight: 700;
     line-height: 1;
@@ -57,7 +57,7 @@
     margin-top: 0;
     margin-bottom: 1rem;
     font-family: "Montserrat", sans-serif;
-    color: #16161a;
+    color: var(--black);
     font-size: 1.2rem;
     line-height: 30px;
     margin-bottom: 15px;
@@ -111,13 +111,13 @@ overflow-x: auto;
     font-size: 14px;
     font-weight: 500;
     background: var(--main-haed);
-    color: white;
+    color: var(--white);
    transition: all 0.4s ease;
     text-decoration: none;
 }
 
 .cabecera-tabla{
-    background-color: var(--main-haed);
+    background-color: var(--haed);
     color: white;
     font-size: 1.2rem;
 }

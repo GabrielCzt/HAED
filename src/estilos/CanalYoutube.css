@@ -3,7 +3,7 @@
 
 .content h2{
     font-size: 15pt;
-    color:black;
+    color:var(--black);
     font-weight: 900;
     margin-bottom: 5pt;
     line-height: 25pt;
@@ -11,11 +11,11 @@
 .content h3{
     font-size: 12pt;
     font-weight:lighter;
-    color:black;
+    color:var(--black);
     
 }
 .content p{
-    color:black;
+    color:var(--black);
     font-weight: 200;
 }
 
@@ -32,7 +32,7 @@
 .searchBox #search{
     background-color: var(--haed);
     width: 100%;
-    color:white;
+    color:var(--white);
     border-radius: 5pt;
     margin-top: 5pt;
     
@@ -41,7 +41,7 @@
 #anterior{
     border-radius: 5pt;
     background-color:var(--haed);
-    color:white;
+    color:var(--white);
     margin-bottom:30pt;
     width: 80pt;
     height: 30pt;
@@ -58,7 +58,7 @@
 #siguiente{
     border-radius: 5pt;
     background-color:var(--haed);
-    color:#ffffff;
+    color:var(--black);
     margin:10pt;
     width: 80pt;
     height: 30pt;

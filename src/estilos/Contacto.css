@@ -61,7 +61,7 @@
 
 .btn-main {
     background: var(--haed);
-    color: white;
+    color: var(--white);
     border-color: var(--haed);
     display: inline-block;
     font-weight: 400;
@@ -82,7 +82,7 @@
 .btn-main:hover {
     background: var(--gray-haed);
     border-color: var(--haed);
-    color: white;
+    color:var(--white);
 }
 
 .btn-round-full {

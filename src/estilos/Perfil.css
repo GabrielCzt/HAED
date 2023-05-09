@@ -1,0 +1,47 @@
+@import url(./Constantes.css);
+
+.profile .card{
+    padding:20px;
+    align-items: center;
+    text-align: center; 
+    margin-top: 10px;   
+    margin-bottom: 50px;
+    border-radius: 5pt;
+    border-top:solid 2px var(--gray-haed);
+    border-bottom:solid 8px var(--gray-haed);
+    border-left:solid 2px var(--gray-haed);
+    border-right:solid 2px var(--gray-haed);
+    
+}
+
+
+.profile .info{
+    margin-top: 10px;   
+    margin-bottom: 50px;
+    padding: 30pt;
+    border:solid 1pt var(--gray-haed);
+    border-radius: 5pt;
+
+}
+.profile #modificar{
+    background-color: var(--haed);
+    color:var(--white);
+    border:none;
+    padding:10pt;
+    border-radius: 10px;
+    margin:20px;
+}
+
+.profile #modificar:hover{
+    background-color: var(--light-haed);
+}
+
+.profile #iconProfile{
+    color:var(--haed);
+    height:80px;
+    margin:20pt;
+    padding: 15pt;
+    border:solid 2px;
+    border-radius: 50pt;
+}
+

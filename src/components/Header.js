@@ -6,6 +6,9 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 import "../estilos/Header.css"
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Link } from "react-router-dom";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+
+
 
 function Year(){
   let year
@@ -21,12 +24,32 @@ function Day(){
   return day = new Date().getDate();
 }
 function Header() {
+  
+  const root = document.documentElement;
+    const cambio =()=>{
+        if(root.style.getPropertyValue('--white')=='#ffffff'){
+            root.style.setProperty('--white','#242424');
+            root.style.setProperty('--black','#ffffff');
+            root.style.setProperty('--non-black-haed','#f5f5f5');
+            root.style.setProperty('--non-white-haed','#16161a');
+            root.style.setProperty('--titulos','#018d8d');
+        }
+        else{
+            root.style.setProperty('--black','#242424');
+            root.style.setProperty('--white','#ffffff');
+            root.style.setProperty('--non-black-haed','#16161a');
+            root.style.setProperty('--non-white-haed','#f5f5f5');
+            root.style.setProperty('--titulos','#104141');
+        }
+        
+    }
   return (         
   <>
     <header>
       <div class="container">
         <div class="row">
           <div class="col-sm-3 col-md-2" id="date">
+          <button onClick={cambio}><FontAwesomeIcon icon={faMoon} id="moon"/></button>
           <FontAwesomeIcon icon={faClock} id="reloj"/>{Day()}/{Month()}/{Year()}
           </div>
           <div class="col-sm-7 col-md-9" id="Title">

@@ -1,11 +1,14 @@
 @import url(./Constantes.css);
+.nav{
+  background-color: var(--white);
+}
 
 .imagen{
     max-width: 100px;
   }
   #links{
     text-align: left;
-    color:black;
+    color:var(--black);
     font-weight: lighter;
     padding-left: 30pt;
     font-family: 'Montserrat';

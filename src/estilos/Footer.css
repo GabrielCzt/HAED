@@ -3,7 +3,9 @@
 div.row{
     margin-right: 0px;
 }
- 
+
+
+
 div.container-fluid{
     padding-right: 0px;
 }
@@ -13,9 +15,9 @@ footer{
     padding: 10pt;
 }
 
-p{
+.foot p{
     font-family:'Montserrat', sans-serif;
-    color: white;
+    color:var(--const-white);
     line-height: 21pt;
     font-weight:400;
     
@@ -23,11 +25,11 @@ p{
 a{
     font-family:"Montserrat", sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 a:hover{
     text-decoration:underline;
-    color:white;
+    color:var(--white);
     padding-left: 4pt;
 }
 ul{
@@ -38,7 +40,7 @@ ul{
 }
 h4{
     font-family:"Montserrat", sans-serif;
-    color:white;
+    color:#ffffff;
     text-transform: uppercase;
     
     font-size: large;
@@ -48,26 +50,26 @@ h4{
 }
 #correos{
     text-transform: capitalize;
-    color: white;
+    color: #ffffff;
     font-size: x-large;
     font-weight: 500;
     font-weight:bold;
 }
 #electronicos{
-    color:black;
+    color:var(--black);
     text-transform: capitalize;
     font-size: x-large;
     font-weight:bold;
 }
 #footer-bottom{
     border:10pt;
-    border-color: black;
+    border-color: var(--black);
     
     padding-top: 10pt;
 
 }
 
 hr{
-    color: black;
+    color: var(--black);
     width: 100%;
 }

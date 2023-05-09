@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css"
 import { Button } from "react-bootstrap";
 import "../estilos/Login.css";
 import "../estilos/Pages.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 function Sign(){
@@ -26,7 +27,7 @@ function Sign(){
         <>
         <div class="bar">
             <div class="container">
-                <h1>Registrarse</h1>
+                <h1>Registro</h1>
             </div>
         </div>
         <div class="container" id="log_sign">

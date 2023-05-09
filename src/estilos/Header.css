@@ -1,7 +1,7 @@
 @import url(./Constantes.css);
 
 #links-header{
-  color: black;
+  color: var(--black);
   padding-left: 0px;
   margin: 0px;
 }
@@ -10,6 +10,7 @@
 header{
     padding-top: 10pt;
     background-color: var(--haed);  
+ 
 }
   #reloj{
     color:yellow;
@@ -20,15 +21,15 @@ header{
   }
   #date{
     text-align: start;
-    color: white;
+    color: var(--white);
     padding-top: 5pt;
   }
   #dropdown-basic{
     background-color: var(--haed);
     margin: var(--haed);  
-    border-color: white;
+    border-color: var(--white);
     margin-bottom: 10pt;
-    color: white;
+    color: var(--white);
   }
   #Title{
     padding-top: 5pt;
@@ -37,6 +38,6 @@ header{
   p{
     font-weight: bolder;
     font-family: 'Montserrat';
-    color:white;
+    color:var(--white);
   }
   
