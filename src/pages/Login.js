@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css"
+import { Link } from "react-router-dom";
 
 
 function Login(){
@@ -23,18 +24,17 @@ function Login(){
         
     }
     return(        
+        
         <>
         <div class="bar">
-            <div class="container">
-                <h1>Iniciar Sesión</h1>
-            </div>
+        <span className="display-1"><b>Inicio de Sesión</b></span>     
         </div>
         <div class="container" id="log_sign">
             <div class="row">
                 <div class="col-sm-12 col-md-6 sign">
                     <h2>¿No tienes una cuenta?</h2>
                     <p>Para poder contestar la Autoevaluación es necesario tener una cuenta de usuario, si aún no la tiene, de clic en el botón de Crear cuenta.</p>
-                    <button>CREAR CUENTA</button>
+                  <Link to="/Registrarse" id="button">REGISTRARSE</Link>
                 </div>
                 <div class="col-sm-12 col-md-6 login">
 

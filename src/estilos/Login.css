@@ -97,7 +97,7 @@ div.container-fluid{
     color:var(--white);
 
 }
-.login button{
+.login #button{
     color:#808080;
     background-color: transparent;
     border: none;

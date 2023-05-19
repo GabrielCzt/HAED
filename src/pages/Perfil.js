@@ -10,9 +10,7 @@ function Perfil(){
     return(
         <>
         <div class="bar">
-            <div class="container">
-                <h1>Información del Docente</h1>
-            </div>
+        <span className="display-1"><b>Información del docente</b></span>     
         </div>
         <div className="profile">
             <div className="container">

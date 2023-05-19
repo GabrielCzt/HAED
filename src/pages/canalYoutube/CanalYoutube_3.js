@@ -8,10 +8,8 @@ function CanalYT3(){
     return(
         <>
             <div class="bar">
-                <div class="container">
-                    <h1>Canal de YouTube</h1>
-                </div>
-            </div>
+        <span className="display-1"><b>Canal de YouTube</b></span>     
+      </div>
             <div className="container content" id="content1">
                 <div className="row">
                     <div className="col-sm-12 col-md-4 order-2 order-sm-2 order-md-1">

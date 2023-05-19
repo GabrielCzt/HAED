@@ -8,7 +8,6 @@
     color:var(--white);
     margin-bottom: 10%;
 }
-.bar h1{
-    font-size: 50pt;
-    color:var(--white);
+.bar .display-1 {
+    font-family: 'Montserrat';
 }

@@ -26,9 +26,7 @@ function Sign(){
     return(        
         <>
         <div class="bar">
-            <div class="container">
-                <h1>Registro</h1>
-            </div>
+        <span className="display-1"><b>Registrarse</b></span>     
         </div>
         <div class="container" id="log_sign">
             <div class="row">

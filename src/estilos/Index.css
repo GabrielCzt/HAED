@@ -28,7 +28,7 @@ h1{
 }
 #contestar{
     padding:10pt;
-    margin:15pt;
+    margin-top:50pt;
     margin-left: 0;
     padding-left: 15pt;
     padding-right: 15pt;
@@ -37,6 +37,8 @@ h1{
     border: none;
     font-weight:bolder;
     font-family: 'Montserrat';
+    height: 20px;
+    border-radius: 5pt;
 
 }
 #contestar:hover{

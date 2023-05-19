@@ -14,6 +14,8 @@ import CanalYT3 from './pages/canalYoutube/CanalYoutube_3';
 import {HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Cuestionario from './pages/Autoevaluacion';
+import Retroalimentacion from './pages/Retroalimentacion';
 
 const ScrollToTop=()=>{
   const{pathname} = useLocation();
@@ -41,6 +43,8 @@ function App() {
           <Route path="/Iniciar-sesion" Component={Login}/>
           <Route path="/Registrarse" Component={Sign}/>
           <Route path="/Perfil" Component={Perfil}/>
+          <Route path="/Autoevaluacion" Component={Cuestionario}/>
+          <Route path="/Autoevaluacion/Retroalimentacion/" Component={Retroalimentacion}/>
           
         </Routes>
         <Footer/>

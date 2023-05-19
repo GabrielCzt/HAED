@@ -17,6 +17,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Card from 'react-bootstrap/Card';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from "react-router-dom";
 
 function Index(){
     //Funciones para mostrar/ocutar el contenido de las fichas de los cuerpos académicos
@@ -70,8 +71,8 @@ function Index(){
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-sm-12 col-md-6" data-aos="fade-up">
-                        <h1>HAED: Herramienta de Autoevaluación Docente</h1>
-                        <Button variant="success" id="contestar">Click aquí para Contestar Autoevaluación</Button>
+                        <h1>HAED: Herramienta de Autoevaluación Docente</h1><br/>
+                        <Link to="/Autoevaluacion" id="contestar">Click aquí para Contestar Autoevaluación</Link>
                     </div>
                     <div class="col-sm-12 col-md-6" data-aos="zoom-in">
                     <img className="img-fluid" src={HERO} alt="Hero"/>

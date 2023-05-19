@@ -27,19 +27,22 @@ function Header() {
   
   const root = document.documentElement;
     const cambio =()=>{
-        if(root.style.getPropertyValue('--white')=='#ffffff'){
+        if(root.style.getPropertyValue('--white')!='#ffffff'){
+          root.style.setProperty('--black','#242424');
+          root.style.setProperty('--white','#ffffff');
+          root.style.setProperty('--non-black-haed','#16161a');
+          root.style.setProperty('--non-white-haed','#f5f5f5');
+          root.style.setProperty('--titulos','#104141');
+
+
+        }
+        else{
+
             root.style.setProperty('--white','#242424');
             root.style.setProperty('--black','#ffffff');
             root.style.setProperty('--non-black-haed','#f5f5f5');
             root.style.setProperty('--non-white-haed','#16161a');
             root.style.setProperty('--titulos','#018d8d');
-        }
-        else{
-            root.style.setProperty('--black','#242424');
-            root.style.setProperty('--white','#ffffff');
-            root.style.setProperty('--non-black-haed','#16161a');
-            root.style.setProperty('--non-white-haed','#f5f5f5');
-            root.style.setProperty('--titulos','#104141');
         }
         
     }

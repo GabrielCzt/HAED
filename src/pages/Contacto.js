@@ -9,19 +9,9 @@ import "../estilos/Contacto.css";
 export default function Contacto() {
     return (
       <>
-      <div class="slider-area2">
-                <div class="slider-height2 hero-overly2 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="hero-cap hero-cap2 text-center">
-                                    <h2>Contáctanos</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="bar">
+        <span className="display-1"><b>Contacto</b></span>     
+      </div>
             <section class="section contact-info mt-5 mb-5 pb-0">
                 <div class="container">
                      <div class="row">
