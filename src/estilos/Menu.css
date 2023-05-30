@@ -1,0 +1,56 @@
+@import url(./Constantes.css);
+
+/*** ESTILOS BOTÓN SLIDE LEFT ***/
+.ov-btn-slide-left {
+    background: #fff; /* color de fondo */
+    color: var(--titulos); /* color de fuente */
+     /* tamaño y color de borde */
+    border-bottom: 2px solid var(--titulos); /* tamaño y color de borde */
+    padding: 16px 20px;
+    padding-left: 11%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    font-size:x-large;
+    font-family: 'Montserrat';
+    justify-content: space-between;
+    margin-bottom: 1%;
+  }
+  .ov-btn-slide-left:hover {
+    color: #fff; /* color de fuente hover */
+    text-decoration: underline;
+  }
+  .ov-btn-slide-left::after {
+    content: "";
+    background: var(--light-haed);
+    background-image: url("https://i.pinimg.com/originals/f7/bc/10/f7bc1016a0a37843aa8fb14aab5f356f.jpg");
+    background-blend-mode: multiply;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;    
+    left: -10%;
+    right: 90%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    text-decoration: underline;
+  }
+  .ov-btn-slide-left:hover::after {
+    text-decoration: underline;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+
+  #pen{
+    color:white;
+    align-items: right;
+  }

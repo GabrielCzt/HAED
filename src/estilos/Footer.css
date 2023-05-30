@@ -22,23 +22,23 @@ footer{
     font-weight:400;
     
 }
-a{
+.foot a{
     font-family:"Montserrat", sans-serif;
     text-decoration: none;
     color: var(--white);
 }
-a:hover{
+.foot a:hover{
     text-decoration:underline;
     color:var(--white);
     padding-left: 4pt;
 }
-ul{
+.foot ul{
     font-family:"Montserrat", sans-serif;
     list-style-type: none;
     padding-left: 0;
     line-height: 30pt;
 }
-h4{
+.foot h4{
     font-family:"Montserrat", sans-serif;
     color:#ffffff;
     text-transform: uppercase;
@@ -48,20 +48,20 @@ h4{
     font-weight:bold;
 
 }
-#correos{
+.foot #correos{
     text-transform: capitalize;
     color: #ffffff;
     font-size: x-large;
     font-weight: 500;
     font-weight:bold;
 }
-#electronicos{
+.foot #electronicos{
     color:var(--black);
     text-transform: capitalize;
     font-size: x-large;
     font-weight:bold;
 }
-#footer-bottom{
+.foot #footer-bottom{
     border:10pt;
     border-color: var(--black);
     

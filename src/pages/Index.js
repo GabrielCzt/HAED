@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../estilos/Index.css"
-import Button from 'react-bootstrap/Button'
 import HERO from "../imagenes/hero.png"
 import IMG1P from "../imagenes/img1_portfolio.jpg"
 import IMG2P from "../imagenes/img2_portfolio.jpg"
@@ -65,27 +64,29 @@ function Index(){
     
     return(
         <>
+        <div className="idx">
+
         
         {/* Primera parte del index */} 
         <div className="index-dark">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6" data-aos="fade-up">
+            <div className="container mt-5">
+                <div className="row">
+                    <div className="col-sm-12 col-md-6" data-aos="fade-up">
                         <h1>HAED: Herramienta de Autoevaluación Docente</h1><br/>
-                        <Link to="/Autoevaluacion" id="contestar">Click aquí para Contestar Autoevaluación</Link>
+                        <Link to="/Seleccionar-autoevaluacion" ><button id="i_contestar">Click aquí para Contestar Autoevaluación</button></Link>
                     </div>
-                    <div class="col-sm-12 col-md-6" data-aos="zoom-in">
+                    <div className="col-sm-12 col-md-6" data-aos="zoom-in">
                     <img className="img-fluid" src={HERO} alt="Hero"/>
                     </div>
                 </div>
 
             {/* Ficha de definicion de HAED*/}
 
-                <div class="row" id="definicion">
-                    <div class="col-sm-12 col-md-6 " data-aos="zoom-in">
+                <div className="row" id="definicion">
+                    <div className="col-sm-12 col-md-6 " data-aos="zoom-in">
                         <img className="img-fluid" id="img2p"src={IMG2P} alt="ImagenPortafolio2"/>
                     </div>
-                    <div class="col-sm-12 col-md-6 info" data-aos="zoom-in">
+                    <div className="col-sm-12 col-md-6 info" data-aos="zoom-in">
                         <h2>Herramienta enfocada al mejoramiento de la calidad educativa universitaria</h2>
                         <p>HAED es un herramienta alternativa de autoevaluación docente propuesta por los cuerpos académicos:</p>
                         <ol> 
@@ -98,38 +99,39 @@ function Index(){
 
                 {/**Apartado de cuerpos académicos */}
 
-                <div class="row cuerpos">
-                    <div class="col-sm-12 col-md-6" data-aos="fade-up">
-                            <div class="row">
+                <div className="row cuerpos">
+                    <div className="col-sm-12 col-md-6" data-aos="fade-up">
+                            <div className="row">
                                 <h1>Cuerpos académicos</h1>
                                 <p>*Para más información da clic sobre el nombre del cuerpo académico.</p>
                             </div>
-                            <a onClick={contenidoTIC}>
-                            <div class="row" id="fichaTic">
-                                <div class="row"><h2><b>TIC Educativa</b></h2></div>
-                                <div class="col">
+                         
+                            <div onClick={contenidoTIC}>
+                            <div className="row" id="fichaTic">
+                                <div className="row"><h2><b>TIC Educativa</b></h2></div>
+                                <div className="col">
                                     <h3><b>Clave</b></h3>
                                     <p>nUTPUE_CA-8</p>
                                 </div>
-                                <div class="col" id="grado">
+                                <div className="col" id="grado">
                                     <h3><b>Grado</b></h3>
                                     <p>En formación</p>
                                 </div>
                             </div>
-                            </a>
-                            <a onClick={contenidoCalidad}>
-                            <div class="row" id="fichaCalidad">
-                                <div class="row"> <h2><b>Calidad y competitividad</b></h2></div>
-                                <div class="col" >
+                            </div>
+                            <div onClick={contenidoCalidad}>
+                            <div className="row" id="fichaCalidad">
+                                <div className="row"> <h2><b>Calidad y competitividad</b></h2></div>
+                                <div className="col" >
                                     <h3><b>Clave</b></h3>
                                     <p>UTPUE_CA-6</p>
                                 </div>
-                                <div class="col" id="grado">
+                                <div className="col" id="grado">
                                     <h3><b>Grado</b></h3>
                                     <p>Consolidado</p>
                                 </div>
                             </div>
-                            </a>
+                            </div>
                     </div>
 
                     {/**Para la funcionalidad de mostrar las diferentes definiciones por
@@ -137,7 +139,7 @@ function Index(){
                     y posteriormente con las funciones js y los estilos css se muestran/ocultan
                     */}
 
-                    <div class="col-sm-12 col-md-6" data-aos="zoom-in">
+                    <div className="col-sm-12 col-md-6" data-aos="zoom-in">
                         <div id="contenedorImagen"><p><img className="img-fluid" src={cuerpo} alt="Cuerpos"/></p></div>
                         <div id="contenedorTIC">
                             <h3>Objetivo:</h3>
@@ -179,7 +181,7 @@ function Index(){
 
                 {/*Tarjetas*/}
 
-                <div class="row cards">
+                <div className="row cards">
                     <div data-aos="fade-up">  
                         <h1>Temas</h1>
                         <p>Los temas a tocar dentro del cuestionario de autoevalución son los siguientes:</p>
@@ -187,7 +189,7 @@ function Index(){
                     {/**Los data-aos son en realidad clases, por lo que agregar una "class" a la etiqueta Card causa conflicto, por esta razón, 
                      se colocó cada tarjeta en un div con las clases respectivas para el diseño responsivo
                     */}
-                        <div class="col-sm-12 col-md-3">
+                        <div className="col-sm-12 col-md-3">
                             <Card id="tarjeta" data-aos="zoom-in" data-aos-duration="500">
                                 <FontAwesomeIcon id="iconCard" icon={faLightbulb}/>
                                 <Card.Body>
@@ -198,7 +200,7 @@ function Index(){
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div class="col-sm-12 col-md-3">
+                        <div className="col-sm-12 col-md-3">
                             <Card id="tarjeta" data-aos="zoom-in" data-aos-duration="1500">
                                 <FontAwesomeIcon id="iconCard" icon={faDesktop}/>
                                 <Card.Body>
@@ -209,7 +211,7 @@ function Index(){
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div class="col-sm-12 col-md-3">
+                        <div className="col-sm-12 col-md-3">
                             <Card id="tarjeta" data-aos="zoom-in" data-aos-duration="2000" >
                                 <FontAwesomeIcon id="iconCard" icon={faUserTie}/>
                                 <Card.Body>
@@ -218,7 +220,7 @@ function Index(){
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div class="col-sm-12 col-md-3">
+                        <div className="col-sm-12 col-md-3">
                             <Card id="tarjeta" data-aos="zoom-in" data-aos-duration="2500">
                                 <FontAwesomeIcon id="iconCard"icon={faGlobe}/>
                                 <Card.Body>
@@ -234,15 +236,15 @@ function Index(){
 
                 {/**Portafolio de imagenes */}
 
-                <div class="row portafolio" data-aos="fade-up">
+                <div className="row portafolio" data-aos="fade-up">
                     <h1>Portafolio de imágenes de HAED</h1>
-                    <div class="col-sm-12 col-md-4"><img className="img-fluid" id="img1p"src={IMG1P} alt="ImagenPortafolio1"/></div>
-                    <div class="col-sm-12 col-md-4"><img className="img-fluid" id="img3p"src={IMG3P} alt="ImagenPortafolio3"/></div>
-                    <div class="col-sm-12 col-md-4"><img className="img-fluid" id="img4p"src={IMG4P} alt="ImagenPortafolio4"/></div>
+                    <div className="col-sm-12 col-md-4"><img className="img-fluid" id="img1p"src={IMG1P} alt="ImagenPortafolio1"/></div>
+                    <div className="col-sm-12 col-md-4"><img className="img-fluid" id="img3p"src={IMG3P} alt="ImagenPortafolio3"/></div>
+                    <div className="col-sm-12 col-md-4"><img className="img-fluid" id="img4p"src={IMG4P} alt="ImagenPortafolio4"/></div>
                 </div>
             </div>
         </div>
-        
+        </div>
         </>
     )
 }

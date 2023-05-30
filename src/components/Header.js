@@ -10,24 +10,15 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
 
 
-function Year(){
-  let year
-  return  year = new Date().getFullYear();
-}
-function Month(){
-  let month
-  return month = new Date().getMonth()+1;
- 
-}
-function Day(){
-  let day
-  return day = new Date().getDate();
-}
+
+
 function Header() {
-  
+  const year = new Date().getFullYear();
+  const month = "0" + (new Date().getMonth()+1).toString();
+  const day = new Date().getDate();
   const root = document.documentElement;
     const cambio =()=>{
-        if(root.style.getPropertyValue('--white')!='#ffffff'){
+        if(root.style.getPropertyValue('--white')!=='#ffffff'){
           root.style.setProperty('--black','#242424');
           root.style.setProperty('--white','#ffffff');
           root.style.setProperty('--non-black-haed','#16161a');
@@ -49,16 +40,16 @@ function Header() {
   return (         
   <>
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-md-2" id="date">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-3 col-md-2" id="date">
           <button onClick={cambio}><FontAwesomeIcon icon={faMoon} id="moon"/></button>
-          <FontAwesomeIcon icon={faClock} id="reloj"/>{Day()}/{Month()}/{Year()}
+          <FontAwesomeIcon icon={faClock} id="reloj"/>{day}/{month}/{year}
           </div>
-          <div class="col-sm-7 col-md-9" id="Title">
+          <div className="col-sm-7 col-md-9" id="Title">
           <p>Herramienta de Autoevaluacion HAED</p>
           </div>
-          <div class="col-sm-2 col-md-1">
+          <div className="col-sm-2 col-md-1">
             <Dropdown >
               <Dropdown.Toggle id="dropdown-basic" >
                 <FontAwesomeIcon icon={faCircleUser} />

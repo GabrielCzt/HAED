@@ -10,7 +10,8 @@ function CanalYT_Start(){
             <div class="bar">
         <span className="display-1"><b>Canal de YouTube</b></span>     
       </div>
-            <div className="container content">
+      <div className="yt">
+      <div className="container content">
                 <div className="row">
                     <div className="col-sm-12 col-md-4 order-2 order-sm-2 order-md-1">
                         <div className="Ratio Ratio-16x9">
@@ -117,6 +118,8 @@ function CanalYT_Start(){
 
 
             </div>    
+      </div>
+           
             
         </>
     );

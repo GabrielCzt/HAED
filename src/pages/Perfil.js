@@ -1,39 +1,38 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../estilos/Perfil.css";
 import "../estilos/Pages.css";
 import { faUser, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import PerfilSideBar from "./PerfilSideBar";
 
-function Perfil(){
-    return(
-        <>
-        <div class="bar">
-        <span className="display-1"><b>Información del docente</b></span>     
+function Perfil() {
+  return (
+    <>
+      <div className="_bar">
+        <span className="display-1">
+          <b>Información del docente</b>
+        </span>
+      </div>
+       
+      <div className="row">
+        <div className="col-1">
+          <PerfilSideBar/>
         </div>
-        <div className="profile">
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-12 col-md-3 card">
-                    <FontAwesomeIcon id="iconProfile" icon={faUser}/>
-                        <h3>Nombre del profesor</h3>
-                        <button id="modificar"><FontAwesomeIcon icon={faAddressCard}/>&nbsp; Modificar información</button>
-                    </div>
-                    <Col className="info" sm={12} md={{offset:1, span:8}}>
-                        <h1>Datos</h1>
-                        <h5>Nombre:</h5>
-                        <h5>Área:</h5>
-                        <h5>Correo Electrónico:</h5>
-                        <h5>Número de telefono:</h5>
-                    </Col>
-                
-                </div>                
-            </div>
+        <div className="col-5">
+          <div className="cont">
+            <h5>Nombre</h5>
+          </div>
         </div>
-           
-        </>
-    );
+        <div className="col-5">
+        <div className="cont">
+            <h5>Nombre</h5>
+          </div>  
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Perfil
+export default Perfil;

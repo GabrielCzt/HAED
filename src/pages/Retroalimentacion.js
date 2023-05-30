@@ -6,7 +6,7 @@ function Retroalimentacion(props) {
   //console.log(_retro);
   return (
     <>
-      <div class="bar">
+      <div className="bar">
         <span className="display-1"><b>Retroalimentacion</b></span>     
         </div>
       <div className="container">

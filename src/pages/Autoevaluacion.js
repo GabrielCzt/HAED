@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "../estilos/Autoevaluacion.css";
-import Retroalimentacion from "./Retroalimentacion";
+
 
 
 function Cuestionario(){
@@ -50,29 +50,35 @@ function Cuestionario(){
                                 document.getElementById(num.node_id).className=num.node_id;
                                 document.getElementById(num.html_url).className="selected";
                             } */                           
-                            return( <>
-                            <li>
-                                <div className="question">
-                                    <h5>{num.id}</h5><hr/>
-                                    <p id="pregunta">{num.pregunta}</p>
-                                    {num.opciones.map((opt,index)=>{
-                                        let valor;
-                                        //if(opt.feedback.feedback){ valor = opt.feedback.feedback} else{ valor="Sin retroalimentacion"}
-                                        try{
-                                            valor = opt.feedback.feedback
-                                        }
-                                        catch{
-                                            valor="Sin retroalimentacion"
-                                        }
-                                        return(
-                                            <>
-                                                <input  type="radio" name={_id} value={valor} id="hola"/>&nbsp;<label className={num.node_id} id={num.node_id} for="hola">{opt.descripcion}</label><br/>                                                
-                                            </>
-                                        );
-                                    })}
-                                    
-                                </div>                                
-                            </li>                            
+                            return( 
+                            <>
+                                <li>
+                                    <div className="row">
+                                        <div className="col-1">
+                                            <h5>{num.id}</h5>
+                                        </div>
+                                        <div className="col">
+                                            <div className="question">                                    
+                                                <p id="pregunta">{num.pregunta}</p>
+                                                {num.opciones.map((opt,index)=>{
+                                                    let valor;
+                                                    //if(opt.feedback.feedback){ valor = opt.feedback.feedback} else{ valor="Sin retroalimentacion"}
+                                                    try{
+                                                        valor = opt.feedback.feedback
+                                                    }
+                                                    catch{
+                                                        valor="Sin retroalimentacion"
+                                                    }
+                                                    return(
+                                                        <>
+                                                            <input  type="radio" name={_id} value={valor} id="hola"/>&nbsp;<label className={num.node_id} id={num.node_id} for="hola">{opt.descripcion}</label><br/>                                                
+                                                        </>
+                                                    );
+                                                })}                                        
+                                            </div>    
+                                        </div>
+                                    </div>                                                            
+                                </li>                            
                             </>
                             
                             );

@@ -1,35 +1,35 @@
 @import url(./Constantes.css);
 
 
-.content h2{
+.yt .content h2{
     font-size: 15pt;
     color:var(--black);
     font-weight: 900;
     margin-bottom: 5pt;
     line-height: 25pt;
 }
-.content h3{
+.yt .content h3{
     font-size: 12pt;
     font-weight:lighter;
     color:var(--black);
     
 }
-.content p{
+.yt .content p{
     color:var(--black);
     font-weight: 200;
 }
 
-.searchBox{
+.yt .searchBox{
     margin-bottom: 20pt;
     border:solid 1pt;
     padding:20pt;
     border-radius: 5pt;
 }
-.searchBox #inputSearch{
+.yt .searchBox #inputSearch{
     border-radius: 5pt;
     width: 100%;
 }
-.searchBox #search{
+.yt .searchBox #search{
     background-color: var(--haed);
     width: 100%;
     color:var(--white);
@@ -38,7 +38,7 @@
     
 }
 
-#anterior{
+.yt #anterior{
     border-radius: 5pt;
     background-color:var(--haed);
     color:var(--white);
@@ -47,27 +47,28 @@
     height: 30pt;
     border:none;
     padding: 5pt;
-    
+    text-decoration: none;
 }
 
-#anterior:hover{
+.yt #anterior:hover{
     background-color: green;
     text-decoration: none;
 }
 
-#siguiente{
+.yt #siguiente{
     border-radius: 5pt;
     background-color:var(--haed);
-    color:var(--black);
+    color:var(--white);
     margin:10pt;
     width: 80pt;
     height: 30pt;
     border:none;
     padding: 5pt;
+    text-decoration: none;
     
 }
 
-#siguiente:hover{
+.yt #siguiente:hover{
     background-color: green;
     text-decoration: none;
 }

@@ -2,31 +2,31 @@
 @import url(./Constantes.css);
 
 
-body{
+.idx body{
     background-color: var(--white);
 }
-div.row{
+.idx  div.row{
     margin-right: 0;
 }
  
-div.container-fluid{
+.idx  div.container-fluid{
     padding-right: 0px;
 }
 /**Primera sección Index*/
-#hero{
+.idx  #hero{
     max-width: 100%;
 }
-#img2p{
+.idx  #img2p{
     margin-bottom: 20pt;
 }
-h1{
+.idx  h1{
     font-family: 'Montserrat';
     color:var(--titulos);
     font-weight:600;
     font-size: 30pt;
     
 }
-#contestar{
+.idx #i_contestar{
     padding:10pt;
     margin-top:50pt;
     margin-left: 0;
@@ -37,127 +37,126 @@ h1{
     border: none;
     font-weight:bolder;
     font-family: 'Montserrat';
-    height: 20px;
+    height:max-content;
     border-radius: 5pt;
-
 }
-#contestar:hover{
+.idx #i_contestar:hover{
     background-color:var(--titulos);
     color:var(--white);
 }
 
 /**TARJETA DE DEFINICION HAED*/
 
-#definicion{
+.idx #definicion{
     background-color:var(--non-white-haed);
     padding: 40pt;
     margin-bottom: 40pt;
 }
-.info p{
+.idx .info p{
     color:var(--black);
     font-family: 'Montserrat';
     font-weight: lighter;
 }
-h2{
+.idx h2{
     font-weight: lighter;
     font-family: 'Montserrat';
     color:var(--light-b-haed);
 }
-ol{
+.idx ol{
     list-style: none;
 }
-li{
+.idx li{
     font-weight: bold;
     padding-top: 5pt;
     font-family: 'Montserrat';
     color: var(--black);
     
 }
-#cicleCheck{
+.idx #cicleCheck{
     color:green;
     margin-right: 10pt;
 }
 
 /* *CUERPOS ACADÉMICOS*/
 
-.cuerpos h1{
+.idx .cuerpos h1{
     font-size: 25pt;
     font-weight: 400;
     font-family: 'Montserrat';
 }
-.cuerpos h2{
+.idx .cuerpos h2{
     color:var(--titulos);
     font-size:x-large;
    font-weight: 600;   
    font-family: "Montserrat", sans-serif;
 }
-.cuerpos h3{
+.idx .cuerpos h3{
     color: var(--light-b-haed);
     font-family: "Montserrat", sans-serif;
     font-size: larger;
 }
-.cuerpos p{
+.idx .cuerpos p{
     color:var(--black);
     font-family: 'Montserrat';
     font-weight: lighter;
 }
-.cuerpos #fichaTic {
+.idx .cuerpos #fichaTic {
     margin-bottom: 20pt;
 }
 
-.cuerpos #fichaTic:hover{
+.idx .cuerpos #fichaTic:hover{
     cursor: pointer;
     border-left: 5pt var(--gray-haed) solid;
     
 }
-.cuerpos #fichaTicA {
+.idx .cuerpos #fichaTicA {
     margin-bottom: 20pt;
     border-left: 5pt #808080 solid;
 }
-.cuerpos #fichaTicA h2{
+.idx .cuerpos #fichaTicA h2{
     color: var(--light-haed);
 }
-.cuerpos #fichaTicA:hover{
+.idx .cuerpos #fichaTicA:hover{
     cursor: pointer;
 }
-.cuerpos #fichaCalidad {
+.idx .cuerpos #fichaCalidad {
     margin-bottom: 20pt;
 }
 
-.cuerpos #fichaCalidad:hover{
+.idx .cuerpos #fichaCalidad:hover{
     cursor: pointer;
     border-left: 5pt var(--gray-haed) solid;
     
 }
-.cuerpos #fichaCalidadA {
+.idx .cuerpos #fichaCalidadA {
     margin-bottom: 20pt;
     border-left: 5pt var(--gray-haed) solid;
 }
-.cuerpos #fichaCalidadA h2{
+.idx .cuerpos #fichaCalidadA h2{
     color: var(--light-haed);
 }
-.cuerpos #fichaCalidadA:hover{
+.idx .cuerpos #fichaCalidadA:hover{
     cursor: pointer;
 }
 
 
 
-#contenedorImagen{
+.idx #contenedorImagen{
     visibility: visible;
     display: block;
 }
-#contenedorTIC{
+.idx #contenedorTIC{
     visibility: hidden;
     display: none;
     color: var(--black);
 }
-#contenedorCalidad{
+.idx #contenedorCalidad{
     visibility: hidden;
     display: none;
     color: var(--black);
 }
 /**Tarjetas*/
-#tarjeta{
+.idx #tarjeta{
     padding: 17pt;
     margin-right: 5pt;
     box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
@@ -171,36 +170,36 @@ li{
 
 
 
-#tarjeta p{
+.idx #tarjeta p{
     color:var(--black);
     font-weight: lighter;
 }
-#iconCard{
+.idx #iconCard{
     color: var(--light-b-haed);
     font-size: 30pt;
 }
-.cards h1{
+.idx .cards h1{
     color: var(--black);
     font-size: 22pt;
     font-weight: 400;
     font-family: 'Montserrat';
 }
-.cards p{
+.idx .cards p{
     color:var(--black);
     font-family: 'Montserrat';
     font-weight: lighter;
 }
 
 /**Portafolio de imagenes HAED*/
-.portafolio{
+.idx .portafolio{
     margin-top: 20pt;
     margin-bottom: 20pt;
 }
-.portafolio h1{
+.idx .portafolio h1{
     font-size: 25pt;
     font-weight: 400;
     font-family: 'Montserrat';
 }
-.portafolio img{
+.idx .portafolio img{
     margin-bottom: 10pt;
 }

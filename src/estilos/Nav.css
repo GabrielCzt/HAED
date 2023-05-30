@@ -13,6 +13,11 @@
     padding-left: 30pt;
     font-family: 'Montserrat';
     padding-bottom: 5pt;
+    text-decoration: none;
+  }
+
+  #links:hover{
+    text-decoration:underline;
   }
   #collapse{
     text-align: right;

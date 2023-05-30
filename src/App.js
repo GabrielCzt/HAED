@@ -16,6 +16,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Cuestionario from './pages/Autoevaluacion';
 import Retroalimentacion from './pages/Retroalimentacion';
+import Menu from './pages/MenuAutoevaluacion';
 
 const ScrollToTop=()=>{
   const{pathname} = useLocation();
@@ -45,6 +46,7 @@ function App() {
           <Route path="/Perfil" Component={Perfil}/>
           <Route path="/Autoevaluacion" Component={Cuestionario}/>
           <Route path="/Autoevaluacion/Retroalimentacion/" Component={Retroalimentacion}/>
+          <Route path='/Seleccionar-cuestionario' Component={Menu}/>
           
         </Routes>
         <Footer/>

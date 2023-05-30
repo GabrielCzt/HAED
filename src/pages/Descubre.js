@@ -6,19 +6,17 @@ import "bootstrap/dist/css/bootstrap.min.css"
 export default function Descubre() {
   return (
     <>
+    {/*Barra de titulo*/}
       <div class="bar">
         <span className="display-3"><b>Herramienta de Autoevaluación Docente</b></span>     
-      </div>
-      {/* ESPACIO */}
-      <div class="Espacio"></div>
-      {/* Termina ESPACIO */}
-
+      </div>   
+    <div className='desc' >
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <h1 class="title1">Autoevaluación Docente</h1>
-              <p class="texto">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <h1 className="title1">Autoevaluación Docente</h1>
+              <p className="texto">
                 El proceso de autoevaluación es una parte fundamental de la
                 educación en nuestros días; esto también incluye al profesorado
                 universitario que necesita capacitarse constantemente tanto en
@@ -30,7 +28,7 @@ export default function Descubre() {
               <br />
               <br />
               <center>
-                <h5 class="title3">
+                <h5 className="title3">
                   Con esta herramienta, el docente podrá reflexionar en su
                   práctica diaria para gestionar su propio conocimiento y
                   mejorar sus procesos de enseñanza con lo que contribuirá de
@@ -41,11 +39,11 @@ export default function Descubre() {
             </div>
           </div>
 
-          <div class="row">
+          <div className="row">
             <br />
-            <div class="col-xl-12">
-              <h1 class="title1">Sustento teórico de HAED</h1>
-              <p class="texto">
+            <div className="col-xl-12">
+              <h1 className="title1">Sustento teórico de HAED</h1>
+              <p className="texto">
                 El diseño del instrumento de autoevalución docente se fundamenta
                 en una investigación hecha por los cuerpos docentes "TIC
                 Educativa" y "Calidad y Competitividad", la cual está basada al
@@ -57,19 +55,19 @@ export default function Descubre() {
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-6">
-              <div class="blog_post">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="blog_post">
                 <img
-                  class="img-teoria"
+                  className="img-teoria"
                   src="http://127.0.0.1/sistemaHaed/Assets/images/descubre/piramide_miller.png"
                   alt=""
                 />
-                <div class="blog_details">
+                <div className="blog_details">
                   <a href="#">
                     <h2>Pirámide de Miller</h2>
                   </a>
-                  <p class="texto">
+                  <p className="texto">
                     Si se habla de una evaluación por competencias, significa
                     que el docente puede incorporar nuevos métodos de
                     evaluación, (López Pastor, 2014), menciona la importancia
@@ -85,7 +83,7 @@ export default function Descubre() {
                     punta incluye la acción (hace).
                   </p>
                   <a
-                    class="button button-blog"
+                    className="button button-blog"
                     target="_blank"
                     href="https://www.youtube.com/watch?v=iOAFWLm7tPg&amp;ab_channel=Mr99mx"
                   >
@@ -95,18 +93,18 @@ export default function Descubre() {
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="blog_post">
+            <div className="col-md-6">
+              <div className="blog_post">
                 <img
-                  class="img-teoria"
+                  className="img-teoria"
                   src="http://127.0.0.1/sistemaHaed/Assets/images/descubre/dimensiones.jpeg"
                   alt=""
                 />
-                <div class="blog_details">
+                <div className="blog_details">
                   <a href="#">
                     <h2>Dimensiones para la autoevaluación</h2>
                   </a>
-                  <p class="texto">
+                  <p className="texto">
                     Cecilia Fierro en su libro “Transformando la Práctica
                     Docente, Una propuesta basada en la investigación-acción”
                     (Cecilia Fierro, 2008), considera seis dimensiones
@@ -114,7 +112,7 @@ export default function Descubre() {
                     Institucional, Interpersonal, Social, Didáctica, Valoral.
                   </p>
                   <a
-                    class="button button-blog"
+                    className="button button-blog"
                     target="_blank"
                     href="https://www.youtube.com/watch?v=iOAFWLm7tPg&amp;ab_channel=Mr99mx"
                   >
@@ -123,22 +121,20 @@ export default function Descubre() {
                 </div>
               </div>
             </div>
-            {/* ESPACIO */}
-            <div class="Espacio"></div>
-            {/* Termina ESPACIO */}
             
-            <div class="col-md-6">
-              <div class="blog_post">
+            
+            <div className="col-md-6">
+              <div className="blog_post">
                 <img
-                  class="img-teoria"
+                  className="img-teoria"
                   src="http://127.0.0.1/sistemaHaed/Assets/images/descubre/rasgos_practica_reflexiva.png"
                   alt=""
                 />
-                <div class="blog_details">
+                <div className="blog_details">
                   <a href="#">
                     <h2>Rasgos de una práctica reflexiva</h2>
                   </a>
-                  <p class="texto">
+                  <p className="texto">
                     Perrenoud se enfoca en preguntas sobre las acciones tomadas
                     dentro del aula integrando al docente como ser humano, el
                     dominio de su profesión, la didáctica y su interacción con
@@ -149,7 +145,7 @@ export default function Descubre() {
                     propuesta de (Perrenoud, 1998).
                   </p>
                   <a
-                    class="button button-blog"
+                    className="button button-blog"
                     target="_blank"
                     href="https://www.youtube.com/watch?v=iOAFWLm7tPg&amp;ab_channel=Mr99mx"
                   >
@@ -158,18 +154,18 @@ export default function Descubre() {
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="blog_post">
+            <div className="col-md-6">
+              <div className="blog_post">
                 <img
-                  class="img-teoria"
+                  className="img-teoria"
                   src="http://127.0.0.1/sistemaHaed/Assets/images/descubre/habilidades.jpeg"
                   alt=""
                 />
-                <div class="blog_details">
+                <div className="blog_details">
                   <a href="#">
                     <h2>Habilidades Tecnológicas de Greg Thompson</h2>
                   </a>
-                  <p class="texto">
+                  <p className="texto">
                     Para realizar una evaluación integral es de vital
                     importancia considerar también aspectos tecnológicos, para
                     ello, Greg Thompson menciona algunos elementos
@@ -177,7 +173,7 @@ export default function Descubre() {
                     sus discentes.
                   </p>
                   <a
-                    class="button button-blog"
+                    className="button button-blog"
                     target="_blank"
                     href="https://www.youtube.com/watch?v=iOAFWLm7tPg&amp;ab_channel=Mr99mx"
                   >
@@ -186,17 +182,17 @@ export default function Descubre() {
                 </div>
               </div>
             </div>
-          <div class="row">
-          <div class="col-xl-12">
-                <h1 class="title1">Resumen</h1>
-                <p class="texto">
+          <div className="row">
+          <div className="col-xl-12">
+                <h1 className="title1">Resumen</h1>
+                <p className="texto">
                     Las propuestas de la Pirámide de Miller, los Rasgos de una Práctica Reflexiva de Perrenoud y las Habilidades Informáticas de Greg Thompson se resumen en la siguente tabla:
                 </p>
                 <br/>
             </div>
-          <div class="tabla-responsiva">
+          <div className="tabla-responsiva">
             <Table striped bordered hover>
-              <thead class="cabecera-tabla">
+              <thead className="cabecera-tabla">
                 <tr>
                   <th>Autor</th>
                   <th>Propuesta</th>
@@ -204,7 +200,7 @@ export default function Descubre() {
                   <th>Impacto del docente</th>
                 </tr>
               </thead>
-              <tbody class="tbody">
+              <tbody className="tbody">
                 <tr>
                   <th>Miller, G. (1990).</th>
                   <td>Pirámide de Miller</td>
@@ -305,6 +301,7 @@ export default function Descubre() {
           </div>
         </div>
       </section>
+      </div>
     </>
   )
 }

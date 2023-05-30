@@ -1,41 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Button } from "react-bootstrap";
 import "../estilos/Login.css";
 import "../estilos/Pages.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
-import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
 function Sign(){
-    const [ojos,setOjos]=useState(faEye)
-    const SeePassword=()=>{
-        let pass = document.getElementById("myPassword");
-        if(pass.type==="password"){
-            pass.type="text";
-            setOjos(faEyeSlash);        
-        }
-        else if(pass.type==="text"){
-            pass.type="password";
-            setOjos(faEye);
-        }
-        
-    }
+    
     return(        
         <>
-        <div class="bar">
+        <div className="bar">
         <span className="display-1"><b>Registrarse</b></span>     
         </div>
-        <div class="container" id="log_sign">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 sign">
+        <div className="log">
+        <div className="container" id="log_sign">
+            <div className="row">
+                <div className="col-sm-12 col-md-6 sign">
                     <h2>¿Ya tienes una cuenta?</h2>
                     <p>Para contestar la autoevaluación debes iniciar sesión, si ya tienes una cuenta da click en el botón Iniciar Sesión</p>
                     <button>INICIAR SESIÓN</button>
                 </div>
-                <div class="col-sm-12 col-md-6 login">
+                <div className="col-sm-12 col-md-6 login">
                     <h2>Bienvenido</h2>
                     <h3>Vamos a crear una nueva cuenta</h3>
                     <form>
@@ -48,6 +33,7 @@ function Sign(){
                     </form>
                 </div>
             </div>
+        </div>
         </div>
         </>
     )

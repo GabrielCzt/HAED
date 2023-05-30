@@ -1,22 +1,22 @@
 @import url(./Constantes.css);
 
 
-*{
+.desc *{
     box-sizing: border-box;
 }
 /* Estilos de imagen Herramienta de autoevaluacion */
-.slider-area2 {
+.desc .slider-area2 {
     background-color: var(--cabecera);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.slider-height2 {
+.desc .slider-height2 {
     height: 26.5rem;
     background-size: cover;
 }
 
-.slider-area2 .hero-cap h2 {
+.desc .slider-area2 .hero-cap h2 {
     color: var(--white);
     font-size: 60px;
     font-weight: 700;
@@ -32,13 +32,13 @@
 /* FIN Estilos de imagen Herramienta de autoevaluacion */
 
 /* Espacio */
-.Espacio{
+.desc .Espacio{
     padding-top: 4.5rem;
 }
 /* FIN Espacio */
 
 /*Section*/
-.title1 {
+.desc .title1 {
     color: #104141;
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
@@ -47,13 +47,13 @@
     
 }
 
-.title3 {
+.desc .title3 {
     color: #50CB93;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
 
-.texto  {
+.desc .texto  {
     margin-top: 0;
     margin-bottom: 1rem;
     font-family: "Montserrat", sans-serif;
@@ -64,39 +64,39 @@
     font-weight: normal;
 }
 
-center{
+.desc center{
     margin-bottom: 3.5rem;
 }
 
 
-.row {
+.desc .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 
-.col-md-6 {
+.desc  .col-md-6 {
     padding-bottom: 0.5rem;
 }
 
-.blog_post img {
+.desc .blog_post img {
     max-width: 100%;
 }
 
-.blog_post .blog_details h2 {
+.desc .blog_post .blog_details h2 {
     color: #006D77;
     font-family: "Montserrat", sans-serif;
 }
 
 
-.tabla-responsiva{
+.desc .desc .tabla-responsiva{
 overflow-x: auto;
 }
 
 
 
-.button-blog{
+.desc .button-blog{
     padding: 5px 31px;
     font-size: 14px;
     background: var(--main-haed);
@@ -106,7 +106,7 @@ overflow-x: auto;
     transition: all 0.4s ease;
 }
 
-.button-blog:hover{
+.desc .button-blog:hover{
     padding: 5px 31px;
     font-size: 14px;
     font-weight: 500;
@@ -116,7 +116,7 @@ overflow-x: auto;
     text-decoration: none;
 }
 
-.cabecera-tabla{
+.desc .cabecera-tabla{
     background-color: var(--haed);
     color: white;
     font-size: 1.2rem;

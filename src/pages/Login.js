@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
 import "../estilos/Login.css";
 import "../estilos/Pages.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,17 +25,19 @@ function Login(){
     return(        
         
         <>
-        <div class="bar">
+        <div className="bar">
         <span className="display-1"><b>Inicio de Sesión</b></span>     
         </div>
-        <div class="container" id="log_sign">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 sign">
+
+        <div className="log">
+        <div className="container" id="log_sign">
+            <div className="row">
+                <div className="col-sm-12 col-md-6 sign">
                     <h2>¿No tienes una cuenta?</h2>
                     <p>Para poder contestar la Autoevaluación es necesario tener una cuenta de usuario, si aún no la tiene, de clic en el botón de Crear cuenta.</p>
                   <Link to="/Registrarse" id="button">REGISTRARSE</Link>
                 </div>
-                <div class="col-sm-12 col-md-6 login">
+                <div className="col-sm-12 col-md-6 login">
 
                     <h2>Bienvenido</h2>
                     <h3>Inicie sesión ahora</h3>
@@ -48,6 +49,7 @@ function Login(){
                     </form>    
                 </div>
             </div>
+        </div>
         </div>
         </>
     )
